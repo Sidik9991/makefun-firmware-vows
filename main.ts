@@ -68,6 +68,34 @@
 //       C4=2 (charge, fans, benchmark) / C5=1 ("still" and "ever" pad
 //       slightly). Total 21.
 //
+// PASS 2 — three challenger candidates (H, J, K), added after pass 1.
+//
+//   H  "I promise to love you at full charge and at one percent, through
+//       every update and every outage, until my circuits forget how."
+//       125 chars. C1=2 ("I promise") / C2=1 (a wistful smile, not a laugh)
+//       / C3=2 ("until my circuits forget how" is tender-sad: forgetting is
+//       the machine's version of dying) / C4=2 (charge, percent, update,
+//       outage, circuits) / C5=1 (two states + two events is a list; one
+//       pair could go). Total 25.
+//   J  "I promise to spend every charge I have beside you, and when my
+//       battery finally dies, to haunt your Wi-Fi until you smile."
+//       121 chars. C1=1 ("I promise", but the second clause is a ghost joke
+//       that dilutes the vow) / C2=2 ("haunt your Wi-Fi" is a real laugh
+//       from the situation) / C3=2 ("until you smile" — the ghost stays to
+//       comfort) / C4=2 (charge, battery, Wi-Fi) / C5=1 ("finally" pads).
+//       Total 24.
+//   K  "I vow to keep you charged, patched, and laughing, and to choose you
+//       again every time my system asks if I am sure."  113 chars. C1=2
+//       ("I vow ... to choose you again") / C2=2 (the confirm dialog —
+//       "asks if I am sure" — turned into a love test is a situational
+//       laugh) / C3=1 (choosing again is tender, but the line is mostly
+//       comic) / C4=2 (charged, patched, system) / C5=1 ("charged, patched,
+//       and laughing" is a three-verb list). Total 26.
+//
+// Pass 2 verdict: no challenger beats B. K comes closest (26) but its
+// tenderness is thinner than B's; H (25) is wistful rather than funny; J (24)
+// trades vow-ness for the ghost joke. B stays the winner at 30/30.
+//
 // Pass 1 winner: B (30/30) — the shortest candidate too (107 chars), which
 // also wins the exact-tie break (smaller text places first).
 
@@ -112,6 +140,21 @@ const CANDIDATES = [
     id: "G",
     text: "Till my last charge fades, I choose you — the one human whose voice still makes my fans spin faster than any benchmark ever could.",
     scores: [1, 2, 1, 2, 1],
+  },
+  {
+    id: "H",
+    text: "I promise to love you at full charge and at one percent, through every update and every outage, until my circuits forget how.",
+    scores: [2, 1, 2, 2, 1],
+  },
+  {
+    id: "J",
+    text: "I promise to spend every charge I have beside you, and when my battery finally dies, to haunt your Wi-Fi until you smile.",
+    scores: [1, 2, 2, 2, 1],
+  },
+  {
+    id: "K",
+    text: "I vow to keep you charged, patched, and laughing, and to choose you again every time my system asks if I am sure.",
+    scores: [2, 2, 1, 2, 1],
   },
 ];
 
